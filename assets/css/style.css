@@ -1,0 +1,332 @@
+
+/* this section setups up custom properties for the colors used within the style sheet */
+:root {
+  --first-color: burlywood;
+  --sec-color:cadetblue;
+  --third-color:black;
+}
+/* this is an overriding style that applies to the entire style sheet */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:var(--sec-color) ;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0%;
+}
+/* header section */
+/* this header style sets up the flexbox and adds a background image that will connect with hero section */
+header {
+  padding: 20px, 35px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/landscape.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color:var(--third-color);
+  margin:0%;
+  padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color:var(--third-color);
+}
+/* this style most notable removes bullets from the list and spaces the words out evenly */
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+
+/* hero section */
+/*  a background image is added to the hero section */
+.hero {
+  background-image: url(../images/landscape.JPG)  ;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+  
+  
+}
+/* section title stylings */
+/* this evenly spaces out the section titles (Work, About Me, Contact Me) */
+.section-title {
+  font-size: 48px;
+  color: var(--third-color);
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto 0px auto;
+  width: 50%;
+}
+
+/* About Me section */
+.aboutMe {
+  background-color: var(--first-color);
+}
+/* flexbow enables */
+.flex-row {
+  display: flex;
+}
+/* text color specified */
+.aboutMe h2 {
+  color: var(--third-color);
+}
+/* flexbox enabled */
+.image-bio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items:stretch ;
+}
+/* this flex child property dictates the ration of space the child takes up in relation to the other children */
+.bio-1  {
+  flex:1 ;
+  margin: 15px;
+  padding:20px ;
+  line-height: 2;
+  font-size: 2vw;
+}
+
+.bio-2 {
+  flex: 3;
+  margin: 33px;
+  padding: 16px;
+  font-size: 1.55vw;
+  line-height: 1.5;
+  background-color: var(--sec-color);
+  border-radius: 15px;
+}
+/* image sizing declared */
+.image-bio img {
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;
+}
+hr {
+  width: 50%;
+}
+/* work section */
+.work {
+  background-color: var(--first-color);
+
+}
+/* flexbox enabled */
+.app-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+/* link styling removed and text color declaration */
+.app-parent a {
+  text-decoration: none;
+  color:var(--third-color);
+}
+
+/* notably this changes the color of the text when a mouse hovers above the element */
+.app-parent a:hover {
+  text-decoration: none;
+  color:palevioletred;
+}
+/* this rounds the corners of the work section children, setsup the ratio of one child to another, and declares sizing, as well as a few other tweaks */
+.app-child {
+  border: var(--third-color) solid 1px;
+  height: 500px;
+  flex: 1;
+  font-size: 3vw;
+  margin: 5px;
+  border-radius: 15px;    
+}
+.work h3 {
+  padding: 20px;
+}
+
+.app-child a {
+  color:black;
+
+}
+.child-1  {
+  background-image:url(../images/cocktail.jpg) ;
+  width: 90%;
+  flex: 2;
+  height: 500px;
+  background-size: cover;
+  background-position:center;
+  background: position 80%;;
+
+}
+.child-2 {
+  background-image:url(https://via.placeholder.com/150) ;
+}
+.app-parent h3 {
+  width: 100%;
+  height: 100%;
+}
+/* contact me section */
+/* this centers the content and makes the width of the div fill the entire screen */
+.contact-me {
+  margin-bottom: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.contact p {
+  text-align:center;
+  flex: 1;
+  line-height: 2;
+}
+
+/* resume html page styling */
+
+.resume-parent {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.resume-child {
+  flex: 1;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER  */
+/* this section changes the styling for screens under 980px, for the most part everthing is stacked vertically   */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 20px;
+    justify-content: center;
+    position: relative;
+    
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .image-bio {
+    flex-direction: column;
+  }
+  .bio-1 {
+      text-align: center;
+  }
+  .flex-row h2 {
+    font-size: 30px ;
+  }
+  .bio-2 {
+      font-size: 3vw;
+      margin: 0%;
+  }
+  .hero {
+      display: none;
+  }
+  .app-parent {
+      flex-direction: column;
+  }
+ 
+  .child-1 {
+      width: 100%;
+}
+}
+/* this section changes styling for even small screens, forcing most of the elements to take up the entire width of the screen */
+
+  @media screen and (max-width: 568px) {
+    header {
+    padding-bottom: 0px;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 80%;
+    text-align: center;
+  }
+  .bio-1 img {
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    
+  }
+  .bio-2 {
+    font-size: 2.55vw;
+  }
+  header {
+    padding: 20px;
+    justify-content: center ;
+    position: relative;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .image-bio {
+    flex-direction: column;
+  }
+  .bio-1 {
+      text-align: center;
+  }
+  .bio-2 {
+      align-self: center;
+  }
+  .hero {
+      display: none;
+  }
+  .app-parent {
+      flex-direction: column;
+  }
+  .app-child {
+    margin:0;
+    margin-bottom: 5px;
+    width: 90% ;
+    align-self: center;
+    
+  }
+}
+
+/* this section makes the image small to accomate the smaller screen size */
+@media screen and (max-width: 568px) {
+  .bio-1 img {
+    width: 200px;
+    height: 200px;
+}
+}
