@@ -1,127 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- the head sets up  some boiler plate html structure -->
+<!-- the head sets up  some boiler plate html structure -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- this link connects the html to the css page -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- this link connects the html to the css page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
   <!-- within the header there is an h1 element that links to the index and a navigation bar that links to other sections of the webpage -->
-    <header>
-        <h1>
-          <a href="index.html">Luke Wofford</a>     
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#aboutMe">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact Me</a>
-                </li>
-                <li>
-                    <a href="./Resume.html">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- this hero section contains a background image that bleeds into the header -->
-    <section class="hero"></section>
-    <main>
-      <!-- This section controls the About Me section -->
-      <!-- this section showcases the use of flexbox and the relation between the parent and the children  -->
-      <section id="aboutMe" class="aboutMe">
-        <div class="flex-row">
-          <h2 class="section-title">About Me</h2>
-        </div>
-        <div class="image-bio">
-          <div class="bio-1">
+  <header>
+    <h1>
+      <a href="index.html">Luke Wofford</a>
+    </h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#aboutMe">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Me</a>
+        </li>
+        <li>
+          <a href="./Resume.html">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- this hero section contains a background image that bleeds into the header -->
+  <section class="hero"></section>
+  <main>
+    <!-- This section controls the About Me section -->
+    <!-- this section showcases the use of flexbox and the relation between the parent and the children  -->
+    <section id="aboutMe" class="aboutMe">
+      <div class="image-bio">
+        <div class="bio-1">
+          <div class="picture-border">
             <img src="./assets/images/luke.jpg" alt="Luke Wofford on a mountain top">
-            <p ><strong>Name:</strong>Luke Wofford  <br>
-               <strong>Position:</strong> Farm Manager <br>
-               <strong>Education:</strong>  B.S. Sustainable Development,
-                UNC Coding Bootcamp
-               <br>    
-            </p>
-          </div>    
-          <div class="bio-2">
-          <h3>Intro</h3>
-            <p> I started my developer career in November of 2021.</p>
-            <p> I am currently in the program and expect to finish in April 2022.</p>
-            <br>  
-            <hr class="hr-style">
+          </div>
+          <p><strong>Name: </strong>Luke Wofford <br>
+            <strong>Position:</strong> Farm Manager <br>
+            <strong>Education:</strong> B.S. Sustainable Development,
+            UNC Coding Bootcamp
             <br>
-          <h3>Skills</h3>
-            <p>
-              Specialties:------------------------------ <br>
-              Frameworks/Libraries:---------------------- <br>
-              Database:---------------------------------- <br>
-              Technologies------------------------------- <br>
-              Version Control: -------------------------- <br>
-              Testing:----------------------------------- <br>
-              </p>
-                <br>
-                <hr class="hr-style">
-                <br>
-              <p> When I am not busy at work, I spend my time outside </p>
-              <p>either working in my greenhouses or out on a hike. I attempt </p>
-              <p>  to play the fiddle and guitar and enjoy learning old appalachian tunes.</p>  
-          </div>     
-        </div> 
-      </section> 
-      <!-- this section showcases images and links to portfolio work  -->
-      <section id="work" class="work">
-        <div class="flex-row">
-          <h2 class="section-title">Work</h2> 
+          </p>
         </div>
-        <div class="app-parent">
-          <div class="app-child child-1">
-            <h3>
-              <a href="https://mcnairjm.github.io/cocktail-app/">Prost <br> Project</a>
-            </h3>
+        <div class="bio-2">
+          <div class="flex-row">
+            <h2 class="section-title ">About Me</h2>
           </div>
-          <div class="app-child child-2">
-            <h3>
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" >Future <br> Project</a>
-            </h3>
-          </div>
-          <div class="app-child child-2">
-            <h3>
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Future <br> Project</a>
-            </h3>
-          </div>
-          <div class="app-child child-2">
-            <h3>
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Future <br> Project</a>
-            </h3>
-          </div>
-          <div class="app-child child-2">
-            <h3>
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Future <br> Project</a>
-            </h3>
-          </div>
+          <p> I am currently enrolled in the UNC Coding bootcamp and have been
+            working with <strong> Javascript, HTML, CSS, JQuery, Express, MySQl, Git, and Sequelize</strong>.
+            Upon completion I will have experience in <strong> Database theory, Mongo DB, Agile Methodology,
+            Progressive Web Apps and React.js</strong>.
+          </p>
+          <br>
+          GithHub: <a href="https://github.com/woffordlm">Checkout my work on github!</a>
+          <br>
+          <br>
+          <hr class="hr-style">
+          <br>
+          <p>
+            When I am not busy at work, I spend my time outside
+            either working in my greenhouses, attempting to play old-time fiddle, or out on a hike. I also run a CSA veggie box operation on my farm outside of Winston-Salem. 
+            <br>
+            <br>
+            <a href="https://www.starbrightfarmnc.com/">Check out the farm!</a>
+          </p>
         </div>
-      </section>  
-    </main>
-    <!-- the footer diplays contact info -->
-    <footer id="contact" class="contact">
-      <div class="flex-row">
-        <h2 class="section-title">Contact Me</h2>
       </div>
-      <div class="contact-me">
-        <p> <strong>Phone:</strong>  336-407-2276 <br>
-            <strong>email:</strong>  lukewoford@gmail.com <br>
-            <strong>Address:</strong> Westbend School Road 
-            Clemmons, NC 27012
-        </p>
-      </div>  
-    </footer>  
+    </section>
+    <!-- this section showcases images and links to portfolio work  -->
+    <section id="work" class="work">
+      <div class="flex-row">
+        <h2 class="section-title">Work</h2>
+      </div>
+      <div class="app-parent">
+        <div class="app-child child-1">
+          <div class="card-header">
+            <h3>
+              <div>
+                <a href="https://mcnairjm.github.io/cocktail-app/"> Prost <br><br> </a>
+              </div> 
+            </h3>
+          </div>
+          <div class="card-body-1">
+          </div>
+        </div>
+        <div class="app-child child-2">
+          <div class="card-header">
+            <h3>
+              <div>
+                <a href="https://woffordlm.github.io/weather-dashboard/"> Weather Dashboard</a>
+              </div> 
+            </h3>
+          </div>
+          <div class="card-body-2">
+          </div>
+        </div>
+        <div class="app-child child-3">
+          <div class="card-header">
+            <h3>
+              <div>
+                <a href="https://wofford-notetaker.herokuapp.com/">  Note Taker <br> Project</a>
+              </div> 
+            </h3>
+          </div>
+          <div class="card-body-3">
+          </div>
+        </div>
+        <div class="app-child child-4">
+          <div class="card-header">
+            <h3>
+              <div>
+                <a href="https://github.com/woffordlm/pro-readme-generator">ReadMe Generator</a>
+              </div> 
+            </h3>
+          </div>
+          <div class="card-body-4">
+          </div>
+        </div>
+        <div class="app-child child-5">
+          <div class="card-header">
+            <h3>
+              <div>
+                <a href="https://woffordlm.github.io/my-calender/">My Calendar <br> Project</a>
+              </div> 
+            </h3>
+          </div>
+          <div class="card-body-5">
+          </div>
+        </div>
+    </section>
+  </main>
+  <!-- the footer diplays contact info -->
+  <footer id="contact" class="contact">
+    <div class="flex-row">
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+    <div class="contact-me">
+      <p> <strong>Phone:</strong> 336-407-2276 <br>
+        <strong>email:</strong> lukewoford@gmail.com <br>
+        <strong>Address:</strong> Westbend School Road
+        Clemmons, NC 27012
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>
