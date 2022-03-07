@@ -184,7 +184,8 @@ hr {
 
 }
 .child-1  {
-  background-image: url(../images/cocktail.jpg);
+  background-image: url(../images/alleyTwentySix.jpg);
+  
   width: 90%;
   flex: 2;
   height: 500px;
@@ -199,12 +200,16 @@ hr {
   border-top-right-radius: 15px;
 }
 .card-body-1 {
-  background-image:url(../images/cocktail.jpg) 
+  background-image:url(../images/alleyTwentySix.jpg) 
 }
 .child-2 {
-  background-image:url(../images/weatherDash.jpg)
+  background-image:url(../images/cocktail.jpg)
   
 }
+/* .child-2 {
+  background-image:url(../images/weatherDash.jpg)
+  
+} */
 .child-3 {
   background-image:url(../images/noteTaker.jpg) 
   
