@@ -12,37 +12,57 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
   <!-- within the header there is an h1 element that links to the index and a navigation bar that links to other sections of the webpage -->
   <header>
-    <h1>
-      <a href="index.html">Luke Wofford</a>
-    </h1>
+    <!-- <h1>
+      <a href="index.html">LW</a>
+    </h1> -->
     <nav>
       <ul>
         <li>
-          <a href="#aboutMe">About Me</a>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="#aboutMe">About</a>
         </li>
         <li>
           <a href="#work">Work</a>
         </li>
         <li>
-          <a href="#contact">Contact Me</a>
+          <a href="#contact">Contact</a>
         </li>
         <li>
-          <a href="./Resume.html">Resume</a>
+          <a  data-toggle="modal" class='.text-white' data-target=".bd-example-modal-xl">Resume</a>
+
+          <!-- <a href="./Resume.html">Resume</a> -->
         </li>
       </ul>
     </nav>
   </header>
   <!-- this hero section contains a background image that bleeds into the header -->
-  <section class="hero"></section>
+  <section>
+
+  </section>
+  <section class="hero">
+    <h1 class="hero-words">
+      <br>
+      <span class="wiggle"> Hi,</span><br>
+      <span class="wiggle"> I'm Luke,</span> <br>
+      <span class="wiggle"> Web Developer</span> <br>
+      <span class="developer-dash">&</span> <span class="wiggle">Farmer </span>
+    </h1>
+  </section>
+
   <main>
     <!-- This section controls the About Me section -->
     <!-- this section showcases the use of flexbox and the relation between the parent and the children  -->
@@ -50,7 +70,7 @@
       <div class="image-bio">
         <div class="bio-1">
           <div class="picture-border">
-            <img src="./assets/images/luke.jpg" alt="Luke Wofford on a mountain top">
+            <img class="luke" src="./assets/images/IMG_7672.jpg" alt="">
           </div>
           <p><strong>Name: </strong>Luke Wofford <br>
             <strong>Position:</strong> Farm Manager <br>
@@ -64,9 +84,9 @@
             <h2 class="section-title ">About Me</h2>
           </div>
           <p> I am currently enrolled in the UNC Coding bootcamp and have been
-            working with <strong> Javascript, HTML, CSS, JQuery, Express, MySQl, Git, and Sequelize</strong>.
-            Upon completion I will have experience in <strong> Database theory, Mongo DB, Agile Methodology,
-            Progressive Web Apps and React.js</strong>.
+            working with <strong> Javascript, HTML, CSS, JQuery, Express, MySQl, Git, Sequelize, Database theory, Mongo
+              DB, Agile Methodology,
+              Progressive Web Apps and React.js</strong>.
           </p>
           <br>
           GithHub: <a href="https://github.com/woffordlm">Checkout my work on github!</a>
@@ -76,7 +96,8 @@
           <br>
           <p>
             When I am not busy at work, I spend my time outside
-            either working in my greenhouses, attempting to play old-time fiddle, or out on a hike. I also run a CSA veggie box operation on my farm outside of Winston-Salem. 
+            either working in my greenhouses, attempting to play old-time fiddle, or out on a hike. I also run a CSA
+            veggie box operation on my farm outside of Winston-Salem.
             <br>
             <br>
             <a href="https://www.starbrightfarmnc.com/">Check out the farm!</a>
@@ -84,80 +105,59 @@
         </div>
       </div>
     </section>
-    <!-- this section showcases images and links to portfolio work  -->
-    <section id="work" class="work">
-      <div class="flex-row">
-        <h2 class="section-title">Work</h2>
-      </div>
-      <div class="app-parent">
-        <div class="app-child child-1">
-          <div class="card-header">
-            <h3>
-              <div>
-                <a href="https://fast-woodland-63027.herokuapp.com/"> Alley Twenty Six <br><br> </a>
-              </div> 
-            </h3>
-          </div>
-          <div class="card-body-1">
-          </div>
-        </div>
-        <div class="app-child child-2">
-          <div class="card-header">
-            <h3>
-              <div>  
-                <a href="https://mcnairjm.github.io/cocktail-app/"> Prost</a>
-              </div> 
-            </h3>
-          </div>
-          <div class="card-body-2">
-          </div>
-        </div>
-        <!-- <div class="app-child child-2">
-          <div class="card-header">
-            <h3>
-              <div>
-                <a href="https://woffordlm.github.io/weather-dashboard/"> Weather Dashboard</a>
-              </div> 
-            </h3>
-          </div>
-          <div class="card-body-2">
-          </div>
-        </div> -->
-        <div class="app-child child-3">
-          <div class="card-header">
-            <h3>
-              <div>
-                <a href="https://wofford-notetaker.herokuapp.com/">  Note Taker <br> Project</a>
-              </div> 
-            </h3>
-          </div>
-          <div class="card-body-3">
-          </div>
-        </div>
-        <div class="app-child child-4">
-          <div class="card-header">
-            <h3>
-              <div>
-                <a href="https://github.com/woffordlm/pro-readme-generator">ReadMe Generator</a>
-              </div> 
-            </h3>
-          </div>
-          <div class="card-body-4">
-          </div>
-        </div>
-        <div class="app-child child-5">
-          <div class="card-header">
-            <h3>
-              <div>
-                <a href="https://woffordlm.github.io/my-calender/">My Calendar <br> Project</a>
-              </div> 
-            </h3>
-          </div>
-          <div class="card-body-5">
-          </div>
-        </div>
     </section>
   </main>
+  <section id="work">
+
+    <h2 class="section-title">Work</h2>
+    <div class="project-list">
+      <div class="project">
+        <a href="https://fast-woodland-63027.herokuapp.com/">
+          <img class="image" src="./assets/images/alleyTwentySix.jpg" width="575" height="350" alt="logo">
+        </a>
+        <h2>Alley 26</h2>
+        <p>An app that allows the user to explore the many cocktails of Alley 26</p>
+        <a href="https://github.com/polizoto/Prost_4.0">
+          <img class="github-image" src="./assets/images/github.svg" alt="github icon"></a>
+      </div>
+      <div class="project">
+        <a href="https://mcnairjm.github.io/cocktail-app/">
+          <img class="image" src="./assets/images/ProstCocktail.jpg" width="575" height="350" alt="logo">
+        </a>
+        <h2>Prost</h2>
+        <p>An app that allows the user to search for cocktails</p>
+        <a href="https://github.com/mcnairjm/cocktail-app">
+          <img class="github-image" src="./assets/images/github.svg" alt="github icon"></a>
+      </div>
+      <!-- <div class="project">
+        <a href="https://wofford-notetaker.herokuapp.com/">
+            <img class="image" src="./assets/images/noteTaker.jpg" width="575" height="350"  alt="logo">
+        </a>
+        <h2>Note Taker</h2>
+        <p>An app that allows the user to keep track of tasks with notes</p>
+        <a href="https://github.com/woffordlm/express.js_Challenge_Note_Taker">
+        <img class="github-image" src="./assets/images/github.svg" alt="github icon"></a>
+    </div> -->
+      <div class="project">
+        <a href="https://github.com/woffordlm/pro-readme-generator">
+          <img class="image" src="./assets/images/readme.jpg" width="575" height="350" alt="logo">
+        </a>
+        <h2>ReadMe Generator</h2>
+        <p>Create a custom readme</p>
+        <a href="https://github.com/woffordlm/pro-readme-generator">
+          <img class="github-image" src="./assets/images/github.svg" alt="github icon"></a>
+      </div>
+      <div class="project">
+        <a href="https://woffordlm.github.io/my-calender/">
+          <img class="image" src="./assets/images/mycalendar.jpg" width="575" height="350" alt="logo">
+        </a>
+        <h2>My Calender</h2>
+        <p>Keep track with you life with the My Calender App</p>
+        <a href="https://github.com/woffordlm/my-calender">
+          <img class="github-image" src="./assets/images/github.svg" alt="github icon"></a>
+      </div>
+  </section>
+  </div>
   <!-- the footer diplays contact info -->
   <footer id="contact" class="contact">
     <div class="flex-row">
@@ -171,6 +171,22 @@
       </p>
     </div>
   </footer>
+
+ 
+  <!-- Extra large modal -->
+
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <img class="resume-size" src="./assets/images/wofford_Lucius-WebDevResume (1).svg" width="100%" height="100%" alt="luke's Resume">
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
