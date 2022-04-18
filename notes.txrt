@@ -1,0 +1,8 @@
+Reducer/Redux
+
+1 setup state
+2 setup actions =>action is = do something  like ADD_USER
+3 dispathactions and change the global store
+4 use a reducer function / switch statement / and that will update the state
+
+
