@@ -97,12 +97,13 @@ h5 a {
   align-items: flex-start;
   background-attachment: fixed;
   background-position: 80%;
-
-}
-.hero-container {
   display: flex;
   flex-wrap: wrap;
+
 }
+/* .hero-container {
+  
+} */
 
 .hero-words {
   color: rgb(235, 228, 231);
@@ -213,12 +214,14 @@ h5 a {
   justify-content: center;
 }
 .project {
+  /* flex: 1; */
   margin: 20px;
   border: black solid;
   padding: 5px;
   background-color:rgb(199, 199, 199);
   font-size: 2vh;
   align-self: center;
+  border-radius: 15px;
 }
 /* .project-text-container {
   display: flex;
@@ -311,13 +314,13 @@ header nav ul li:hover {
     height: 300px;
    width: 300px;
   }
-   header {
+   /* header {
      display: none;
-   }
+   } */
 
   .hero{
-  background-image: none;
-  height: 200px;
+  /* background-image: none;
+  height: 200px; */
   
   } 
   .luke {
@@ -338,9 +341,6 @@ header nav ul li:hover {
     display: block;
     
   }
-  .project {
-    margin-left:3px ;
-    margin-right:3px 
-  }
+
   
 }
