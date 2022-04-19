@@ -286,7 +286,7 @@ header nav ul li:hover {
 }
 
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 856px) {
 
   .image-bio {
     display: block;
