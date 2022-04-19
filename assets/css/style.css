@@ -304,10 +304,10 @@ header nav ul li:hover {
    .image-bio img {
     margin: 20px;
     margin-top: 40px;
-    /* border: black solid;  */
+    border: black solid; 
     padding: 5px;
-    height: 30%;
-   width: 30%;
+    height: 200px;
+    width: 200px
   }
   nav {
     display: none;
