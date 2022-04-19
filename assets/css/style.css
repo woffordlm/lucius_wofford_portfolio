@@ -294,9 +294,9 @@ header nav ul li:hover {
     height: 70%;
     width: 70%;
   }
-  nav {
+  /* nav {
     display: none;
-  }
+  } */
 
   
   .hero-words {
@@ -304,10 +304,7 @@ header nav ul li:hover {
 
   } 
  
-  .hamburger {
-    display: block;
-    
-  }
+
 
   
 }
@@ -317,6 +314,10 @@ header nav ul li:hover {
    header {
      display: none;
    }
+   .hamburger {
+    display: block;
+    
+  }
 
    .hero{
     background-image: none;
