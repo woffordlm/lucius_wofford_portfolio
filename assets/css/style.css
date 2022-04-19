@@ -320,7 +320,8 @@ header nav ul li:hover {
 
    .hero{
     background-image: none;
-   height: 200px;
+   height: 225px;
+   width : 100%
    
    } 
 
