@@ -101,9 +101,6 @@ h5 a {
   flex-wrap: wrap;
 
 }
-/* .hero-container {
-  
-} */
 
 .hero-words {
   color: rgb(235, 228, 231);
@@ -290,20 +287,20 @@ header nav ul li:hover {
 
 
 @media screen and (max-width: 1190px) {
-  .bio-1 {
-    flex: 1;
-    text-align: center;
-  }
-  .bio-2 {
-    flex: 1;
-  }
 
   .image-bio {
     display: block;
     flex-wrap: wrap;
     align-items: stretch;
   }
-
+  .bio-1 {
+    flex: 1;
+    
+  }
+  .bio-2 {
+    flex: 1;
+   
+  }
    .image-bio img {
     margin: 20px;
     margin-top: 40px;
