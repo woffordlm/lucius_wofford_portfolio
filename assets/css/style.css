@@ -151,7 +151,7 @@ h5 a {
   margin: 10px;
   padding: 20px;
   line-height: 2;
-  font-size: 2.5vh;
+  font-size: 3vh;
   margin-bottom: 0px;
   margin-right: 7%;
   text-align: center;
@@ -161,27 +161,30 @@ h5 a {
   flex: 2;
   margin: 10px;
   padding: 20px;
-  font-size: 2.5vh;
+  font-size: 3vh;
   line-height: 2;
 }
 
 .image-bio img {
-  margin: 20px;
+  width: 250px;
+  margin-left: 20px;
   border: black solid;
-  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  /* padding: 5px; */
  
 }
 
 /* work section */
 
 
-
+/* 
 .luke {
   margin-left: -75%;
-  border-radius: 50%;
+  
   margin-top: 250px;
 
-}
+} */
 
 .contact-me {
   margin-bottom: 20px;
@@ -279,21 +282,9 @@ header nav ul li:hover {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
 
-  .image-bio {
-    display: block;
-   
-  }
- 
-   .image-bio img {
-    
-    margin-top: 30px;
-    border: black solid; 
-    padding: 5px;
-    height: 70%;
-    width: 70%;
-  }
+  
   /* nav {
     display: none;
   } */
@@ -311,6 +302,12 @@ header nav ul li:hover {
 
 @media screen and (max-width: 600px) {
 
+  .image-bio {
+    display: block;
+   
+  }
+ 
+
    header {
      display: none;
    }
@@ -319,8 +316,8 @@ header nav ul li:hover {
     
   }
 
-   .hero{
-    background-image: none;
+   #hero-container{
+  background-image: none;
    height: 225px;
    width : 100%
    
